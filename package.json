@@ -19,6 +19,8 @@
 		"gulp-sourcemaps": "*",
 		"gulp-uglify-es": "^2.0.0",
 		"gulp-zip": "*",
+		"react": "^16.13.0",
+		"react-dom": "^16.13.0",
 		"run-sequence": "*"
 	},
 	"scripts": {
