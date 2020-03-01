@@ -1,0 +1,23 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-copy {
+  padding: 18px 61px 12px 61px;
+  opacity: 0.5;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #6b6b6b;
+}
+
+.footer-logo {
+  align-items: center;
+}
+
+.footer-logo {
+  padding: 0px 108px 20px 109px;
+}
