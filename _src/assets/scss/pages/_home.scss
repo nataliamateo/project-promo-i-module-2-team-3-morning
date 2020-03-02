@@ -81,3 +81,51 @@
     }
   }
 }
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    height: 963px;
+    &__image {
+      width: 419px;
+      height: 105px;
+    }
+    &__title {
+      width: 278px;
+      height: 31px;
+      margin-top: 31px;
+      font-size: 24px;
+    }
+    &__text {
+      width: 331px;
+      height: 48px;
+      margin: 0 0 27px 0;
+      font-size: 16px;
+    }
+    &__box {
+      width: 325px;
+      height: 86px;
+      border-radius: 5px;
+      border: solid 1.6px #e1733433;
+      &--links {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      &--icons {
+        width: 25px;
+        height: 29px;
+        font-size: 28px;
+      }
+      &--text {
+        margin: 0;
+        width: 75px;
+        font-size: 16px;
+      }
+    }
+    &__button {
+      margin-top: 186px;
+    }
+  }
+}
