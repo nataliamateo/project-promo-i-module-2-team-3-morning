@@ -20,6 +20,12 @@
 
   &__card {
     background-color: white;
+    width: 240px;
+
+    &--container {
+      border-left: 5px solid #438792;
+      padding: 23px 0px 10px 15px;
+    }
     &--name {
       color: #114e4e;
       font-family: 'Montserrat';
@@ -33,6 +39,24 @@
       font-family: 'Montserrat';
       font-size: 16px;
       line-height: 1.25;
+    }
+    &--list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 62px 12px 20px;
+      color: #114e4e;
+      // margin-top: 10px;
+    }
+    &--round {
+      height: 32px;
+      width: 32px;
+      background: transparent;
+      border: 2px solid #a2deaf;
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
