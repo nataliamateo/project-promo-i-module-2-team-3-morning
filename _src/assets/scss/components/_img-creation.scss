@@ -51,6 +51,10 @@
       padding: 10px 62px 12px 20px;
       color: #114e4e;
       // margin-top: 10px;
+
+      & a {
+        padding: 10px;
+      }
     }
     &--round {
       height: 32px;
