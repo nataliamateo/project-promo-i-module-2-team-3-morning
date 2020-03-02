@@ -1,0 +1,41 @@
+.img-creation {
+  &__container {
+    height: 457px;
+    padding: 38px 35px 40px 45px;
+    background-color: #dde9ed;
+  }
+
+  &__button {
+    margin-bottom: 20px;
+    background: transparent;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    color: #54585a;
+    cursor: pointer;
+  }
+
+  &__card {
+    background-color: white;
+    &--name {
+      color: #114e4e;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.11;
+      text-transform: capitalize;
+    }
+    &--profession {
+      color: #54585a;
+      font-family: 'Montserrat';
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
+.far.fa-trash-alt {
+  margin-right: 8px;
+}
