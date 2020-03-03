@@ -1,9 +1,11 @@
 .img-creation {
-  &__container {
-    height: 457px;
-    padding: 38px 35px 40px 45px;
-    background-color: #dde9ed;
-  }
+  height: 457px;
+  padding: 38px 35px 40px 45px;
+  background-color: #dde9ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &__button {
     margin-bottom: 20px;
@@ -16,6 +18,7 @@
     font-family: 'Open Sans';
     color: #54585a;
     cursor: pointer;
+    align-self: flex-start;
   }
 
   &__card {
