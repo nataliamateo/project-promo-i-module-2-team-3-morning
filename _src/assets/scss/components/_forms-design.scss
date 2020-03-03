@@ -1,10 +1,5 @@
 // este se puede poner en el scss de forms para que se aplique a todo
-.color-fieldset {
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid #d8d8d8;
-  border-left: 0;
-}
+
 .design-position {
   display: flex;
   margin-top: 27px;
@@ -14,7 +9,7 @@
     font-size: 18px;
   }
   &__title {
-    font-family: "OpenSans";
+    font-family: "Open Sans";
     font-size: 18px;
     text-transform: uppercase;
     color: #54585a;
@@ -30,7 +25,7 @@
     justify-content: space-between;
 
     &--title {
-      font-family: "OpenSans";
+      font-family: "Open Sans";
       font-size: 14px;
       text-transform: uppercase;
       color: #54585a;

@@ -4,6 +4,12 @@
 .articles-container {
   width: 320px;
 }
+.color-fieldset {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d8d8d8;
+  border-left: 0;
+}
 
 @import "components/_forms-design";
 @import "components/_forms-fill";
