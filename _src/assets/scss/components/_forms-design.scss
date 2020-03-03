@@ -1,18 +1,45 @@
 .color-fieldset {
   border: 0;
 }
-.color-container {
-  display: flex;
-  justify-content: space-between;
+.design-position {
+  margin-top: 27px;
+  margin-left: 31px;
+
+  &__title {
+    width: 65px;
+    height: 24px;
+    font-family: OpenSans;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #54585a;
+  }
+  &__color {
+    margin-top: 22px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &--title {
+      font-family: OpenSans;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #54585a;
+    }
+  }
 }
-.one-row {
-  display: flex;
-  margin-bottom: 20px;
+
+.bg-colors {
+  margin-bottom: 10px;
+  &__one-row {
+    display: flex;
+    margin-bottom: 20px;
+    &--color-box {
+      width: 30px;
+      height: 25px;
+    }
+  }
 }
-.color-box {
-  width: 30px;
-  height: 25px;
-}
+
 .bg-dark-green {
   background-color: #114e4e;
 }
