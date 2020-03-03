@@ -1,16 +1,27 @@
+// este se puede poner en el scss de forms para que se aplique a todo
 .color-fieldset {
-  border: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #d8d8d8;
+  border-left: 0;
 }
 .design-position {
+  display: flex;
   margin-top: 27px;
-  margin-left: 31px;
+  justify-content: space-between;
+  &__icon {
+    color: #e17334;
+    font-size: 18px;
+  }
   &__title {
-    width: 65px;
-    height: 24px;
-    font-family: OpenSans;
+    font-family: "OpenSans";
     font-size: 18px;
     text-transform: uppercase;
     color: #54585a;
+  }
+  &__arrow-icon {
+    color: #54585a;
+    font-size: 18px;
   }
   &__color {
     margin-top: 22px;
@@ -19,7 +30,7 @@
     justify-content: space-between;
 
     &--title {
-      font-family: OpenSans;
+      font-family: "OpenSans";
       font-size: 14px;
       text-transform: uppercase;
       color: #54585a;
