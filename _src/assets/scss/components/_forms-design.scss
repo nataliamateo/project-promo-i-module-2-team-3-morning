@@ -4,7 +4,6 @@
 .design-position {
   margin-top: 27px;
   margin-left: 31px;
-
   &__title {
     width: 65px;
     height: 24px;
@@ -29,10 +28,12 @@
 }
 
 .bg-colors {
-  margin-bottom: 10px;
   &__one-row {
     display: flex;
     margin-bottom: 20px;
+    &--radio {
+      align-self: center;
+    }
     &--color-box {
       width: 30px;
       height: 25px;
@@ -42,6 +43,7 @@
 
 .bg-dark-green {
   background-color: #114e4e;
+  margin-left: 10px;
 }
 .bg-dirty-blue {
   background-color: #438792;
@@ -51,6 +53,7 @@
 }
 .bg-dried-blood {
   background-color: #420101;
+  margin-left: 10px;
 }
 .bg-rusty-red {
   background-color: #bd1010;
@@ -60,6 +63,7 @@
 }
 .bg-slate {
   background-color: #3e5b65;
+  margin-left: 10px;
 }
 .bg-faded-orange {
   background-color: #eab052;
