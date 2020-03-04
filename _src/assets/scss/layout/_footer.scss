@@ -19,13 +19,17 @@
   &__logo {
     padding: 0px 108px 20px 109px;
     align-items: center;
+
+    &--width {
+      width: 103px;
+    }
   }
 }
 
 @media all and (min-width: 768px) {
   .footer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &__copy {
       padding: 18px 0px 22px 41px;
@@ -38,6 +42,8 @@
 
   @media all and (min-width: 1280px) {
     &__logo {
+      width: 103px;
+      height: 40px;
       padding: 10px 40px 10px 785px;
     }
   }
