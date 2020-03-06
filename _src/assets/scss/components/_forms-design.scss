@@ -10,7 +10,7 @@
       align-self: center;
     }
     &--title {
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 18px;
       text-transform: uppercase;
       color: #54585a;
@@ -29,7 +29,7 @@
     justify-content: space-between;
 
     &--title {
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 14px;
       text-transform: uppercase;
       color: #54585a;
@@ -46,6 +46,10 @@
       }
     }
   }
+}
+
+.js-hidden {
+  display: none;
 }
 
 .bg-dark-green {
