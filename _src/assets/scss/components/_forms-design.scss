@@ -1,9 +1,5 @@
 // este se puede poner en el scss de forms para que se aplique a todo
 .collapsible {
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid #d8d8d8;
-  border-left: 0;
   &__header {
     display: grid;
     grid-template-columns: 0.5fr 1fr 2fr;
