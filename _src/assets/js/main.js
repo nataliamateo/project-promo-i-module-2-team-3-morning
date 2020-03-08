@@ -28,9 +28,8 @@ const imageEmail = document.querySelector('.js-image-mail');
 function showForm() {
   collapsibleDesign.classList.toggle('js-hidden');
 }
-
 function showForm2() {
-  collapsibleForm.classList.toggle('js-hidden-fill');
+  const collapsed = collapsibleForm.classList.toggle('js-hidden-fill');
 }
 function showForm3() {
   collapsibleShare.classList.toggle('js-hidden-share');
@@ -92,10 +91,26 @@ inputEmailUser.addEventListener('keyup', handleAddEmail);
 
 console.log('>> Ready :)');
 
+// OTRA FORMA DE HACER COLAPSABLES CON IF
+
 // function showForm() {
 //   if (collapsibleDesign.classList.contains('js-hidden')) {
 //     collapsibleDesign.classList.remove('js-hidden');
 //   } else {
 //     collapsibleDesign.classList.add('js-hidden');
 //   }
+// }
+
+// INTENTO COLAPSABLES CON QUERYSELECTORALL
+
+// const arrowButtonForm = document.querySelectorAll('.js-arrow');
+
+// const collapsible = document.querySelectorAll('.js-hidden');
+// console.log(collapsible);
+
+// function showForm() {
+//   for (let i of collapsible) i.classList.toggle('js-hidden');
+// }
+// for (let arrow of arrowButtonForm) {
+//   arrow.addEventListener('click', showForm);
 // }

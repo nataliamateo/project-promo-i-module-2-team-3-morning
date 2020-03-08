@@ -28,7 +28,9 @@
 .js-hidden-fill {
   display: none;
 }
-
+.js-arrow-rotate {
+  transform: rotate(180deg);
+}
 .collapsible__content {
   &--style-text {
     font-family: 'Open Sans';
