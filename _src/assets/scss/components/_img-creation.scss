@@ -1,11 +1,20 @@
 .img-creation {
-  height: 457px;
+  // height: 457px;
   padding: 38px 35px 40px 45px;
   background-color: #dde9ed;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media all and (min-width: 768px) {
+    width: 50%;
+    margin: 23px 40px 21px 0px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 70%;
+    margin: 21px 40px 20px 0px;
+  }
 
   &__button {
     margin-bottom: 20px;
