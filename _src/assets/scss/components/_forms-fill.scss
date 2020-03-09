@@ -1,7 +1,7 @@
 .collapsible {
   &__header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
     margin-top: 10px;
     margin-bottom: 25px;
     &__icon {
