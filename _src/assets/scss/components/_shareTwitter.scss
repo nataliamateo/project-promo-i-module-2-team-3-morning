@@ -5,10 +5,11 @@
   align-items: center;
 }
 
-.collapsible__content__button {
+.share-container__button--styles {
   width: 199px;
   height: 50px;
   border: 0;
+  margin-bottom: 30px;
   border-radius: 12px;
   background-color: #e17334;
   font-family: 'Open Sans';
@@ -17,36 +18,37 @@
   color: #ffffff;
 }
 
-.collapsible__content--icon-card {
+.share-container__button--icon-card {
   width: 25px;
   height: 22px;
   text-align: center;
   color: #ffffff;
 }
 
-.collapsible__content__twitter {
+.share-container__twitter {
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid #d8d8d8;
   border-right: 0;
-  border-bottom: 0;
+  border-bottom: 1px solid #d8d8d8;
   border-left: 0;
+  margin-bottom: 30px;
 }
 
-.collapsible__content__btn__container {
-  display: flex;
-  justify-content: center;
-}
-
-.collapsible__content__twitter {
-  margin: 0 30px;
-}
-.collapsible__content__twitter__title {
+.share-container__twitter__title {
+  padding: 20px 0 5px 0;
   font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   color: #54585a;
 }
-.collapsible__content__twitter--link {
+.share-container__twitter--link {
+  width: 100vw;
+  padding-bottom: 10px;
   text-decoration: none;
   font-family: 'Open Sans';
   font-size: 12px;
@@ -55,9 +57,11 @@
   color: #e17334;
 }
 
-.collapsible__content__twitter__btn {
+.share-container__twitter__btn {
   width: 181px;
   height: 30px;
+  margin-bottom: 30px;
+  border: 0;
   border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
   background-color: #00a0f5;
@@ -67,7 +71,7 @@
   color: #ffffff;
 }
 
-.collapsible__content--ico-twitter {
+.share-container__twitter--ico-twitter {
   width: 18px;
   height: 18px;
   font-size: 18px;
