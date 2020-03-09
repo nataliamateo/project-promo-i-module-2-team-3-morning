@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const userDetails=document.querySelectorAll(".js-input-text");function handleUserDetails(e){const t=e.currentTarget;userDetails[name]=t.value}userDetails.addEventListener("keyup",handleUserDetails),console.log(userDetails);
