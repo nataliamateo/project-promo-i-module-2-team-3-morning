@@ -18,6 +18,17 @@ function addJob(ev) {
 
 copyJob.addEventListener("keyup", addJob);
 
+// botón reset
+const imageName = document.querySelector(".js-pastename");
+const imageJob = document.querySelector(".js-pastejob");
+const imageButtonReset = document.querySelector(".js-reset");
+
+function resetImageData() {
+  imageName.innerHTML = "Nombre Apellido";
+  imageJob.innerHTML = "Front-end developer";
+}
+imageButtonReset.addEventListener("click", resetImageData);
+
 // const userDetails = document.querySelectorAll(".js-input-text");
 
 // // un bucle que recorra todos los elementos del objeto
