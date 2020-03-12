@@ -10,7 +10,7 @@
       align-self: center;
     }
     &--title {
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 18px;
       text-transform: uppercase;
       color: #54585a;
@@ -25,11 +25,16 @@
   &__content {
     margin-top: 22px;
     margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+
+    &--1 {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &--title {
-      font-family: "Open Sans";
+      font-family: 'Open Sans';
       font-size: 14px;
       text-transform: uppercase;
       color: #54585a;
