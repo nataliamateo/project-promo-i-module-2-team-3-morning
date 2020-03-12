@@ -46,7 +46,7 @@ imageButtonReset.addEventListener("click", resetImageData);
 // userDetails.addEventListener("keyup", handleUserDetails);
 
 //start collapsible
-// const collapsibleTrigger = document.querySelectorAll('.js-collapsible--trigger');
+const collapsibleTrigger = document.querySelectorAll(".js-collapsible--trigger");
 
 function updateCollapsible(ev) {
   const currentCollapsible = ev.currentTarget.parentElement;

@@ -11,11 +11,15 @@
   border-bottom: 1px solid #d8d8d8;
   border-left: 0;
 }
-.collapsible--open {
-  display: flex;
+// abierto
+// comprobado que si quitas la a y pones i no funciona, el porque ni idea
+
+// tambien teníamos que indicar dentro del open que contenido se ve o no,nos faltaba poner el content
+.collapsable--open .collapsible__content {
+  display: block;
 }
 
-@import 'components/_forms-design';
-@import 'components/_forms-fill';
-@import 'components/_forms-share';
-@import 'components/shareTwitter';
+@import "components/_forms-design";
+@import "components/_forms-fill";
+@import "components/_forms-share";
+@import "components/shareTwitter";
