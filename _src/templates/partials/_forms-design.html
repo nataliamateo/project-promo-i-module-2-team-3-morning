@@ -1,12 +1,14 @@
+<!-- el collapsible-open era cambiarle la i por la a -->
 <fieldset class="collapsible collapsible--open">
-  <div class="js-collapsible--trigger collapsible__header">
+  <div class="js-collapsible--trigger collapsible__header--design">
     <i class="far fa-object-ungroup collapsible__header--icon"></i>
     <h2 class="collapsible__header--title">Diseña</h2>
     <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i>
   </div>
-  <div class="collapsible__content--1">
+  <div class="collapsible__content">
     <h3 class="collapsible__content--title">Colores</h3>
-    <div>
+    <!--comentar con grupo como da un block el collapsable hay que darle un estilo al div que guarda las paletas -->
+    <div class="collapsible__content--position">
       <label class="js-palette1 collapsible__content__palette" for="firstcolor">
         <input class="collapsible__content__palette--radio" id="firstcolor" type="radio" value="colorsgreen" name="colors" />
         <div class="collapsible__content__palette--box bg-dark-green"></div>
