@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>mariCARDis</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+        rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/css/cards.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    
+    <body>
+        <header class="header__container">
+            <img class="header__image" src="./assets/images/descarga.svg" title="Awesome profile-cards"
+            alt="Awesome profile-cards" />
+        </header>
+        <section class="cards-page">
+            <section class="img-creation">
+                <div class="img-creation__container">
+                    <button class="js-reset img-creation__button"><i class="far fa-trash-alt"></i>Reset</button>
+                    <article class="img-creation__card">
+                        <div class="img-creation__card--container">
+                             <h2 class="js-pastename img-creation__card--name">Nombre apellido</h2> 
+                             <h3 class="js-pastejob img-creation__card--profession">Front-end developer</h3> 
+                        </div>
+                        <img src="https://via.placeholder.com/240x200" alt="" />
+                        <ul class="img-creation__card--list">
+                            <li class="img-creation__card--round"> <a href="#"><i class="fas fa-mobile-alt"></i></a> 
+                            </li>
+                            <li class="img-creation__card--round"> <a href=""><i class="far fa-envelope"></i></a> 
+                            </li>
+                            <li class="img-creation__card--round"> <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                            </li>
+                            <li class="img-creation__card--round"> <a href="#"><i class="fab fa-github-alt"></i></a> 
+                            </li>
+                        </ul>
+                </div>
+                </article>
+            </section>
+            <form action="" method="POST" class="articles-container">
+                <div class="principal-column">
+                    <fieldset class="open collapsible">
+                        <div class="ja-header collapsible__header"> <i class="far fa-object-ungroup collapsible__header--icon"></i> 
+                             <h2 class="collapsible__header--title">Diseña</h2>  <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i> 
+                        </div>
+                        <div class="collapsible__content">
+                             <h3 class="collapsible__content--title">Colores</h3> 
+                            <div>
+                                <label class="collapsible__content--palette" for="firstcolor">
+                                    <input class="collapsible__content--palette--radio" id="firstcolor" type="radio"
+                                    value="colorsgreen" name="colors" />
+                                    <div class="collapsible__content--palette--box bg-dark-green"></div>
+                                    <div class="collapsible__content--palette--box bg-dirty-blue"></div>
+                                    <div class="collapsible__content--palette--box bg-hospital-green"></div>
+                                </label>
+                                <label class="collapsible__content--palette" for="secondcolor">
+                                    <input class="collapsible__content--palette--radio" id="secondcolor" type="radio"
+                                    value="colorsred" name="colors" />
+                                    <div class="collapsible__content--palette--box bg-dried-blood"></div>
+                                    <div class="collapsible__content--palette--box bg-rusty-red"></div>
+                                    <div class="collapsible__content--palette--box bg-tomato"></div>
+                                </label>
+                                <label class="collapsible__content--palette" for="tertiarycolor">
+                                    <input class="collapsible__content--palette--radio" id="tertiarycolor"
+                                    type="radio" value="colorsblue" name="colors" />
+                                    <div class="collapsible__content--palette--box bg-slate"></div>
+                                    <div class="collapsible__content--palette--box bg-faded-orange"></div>
+                                    <div class="collapsible__content--palette--box bg-light-grey-blue"></div>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="collapsible open">
+                        <div class="js-header collapsible__header"> <i class="far fa-keyboard collapsible__header--icon"></i> 
+                             <h2 class="collapsible__header__title">Rellena</h2>  <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i> 
+                        </div>
+                        <div>
+                            <label class="collapsible__content--style-text" for="fullname">Nombre completo</label>
+                            <input class="js-input-text js-copyname collapsible__content--input-form"
+                            placeholder="Ej: Sally Jill" type="text" id="fullname" name="name" required
+                            />
+                        </div>
+                        <div>
+                            <label class="collapsible__content--style-text" for="job">Puesto</label>
+                            <input class="js-input-text js-copyjob collapsible__content--input-form"
+                            placeholder="Ej: Front-end" type="text" id="job" name="job" required />
+                        </div>
+                        <label class="collapsible__content--style-text" for="image">Imagen de perfil</label>
+                        <div class="collapsible__content--container-button">
+                            <button class="collapsible__content--style-text--button" type="button"
+                            class="image-button">Añadir imagen</button>
+                            <div class="collapsible__content--container-button--image-box"></div>
+                        </div>
+                        <div>
+                            <label class="collapsible__content--style-text" for="email">Email</label>
+                            <input class="js-input-text collapsible__content--input-form"
+                            placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email"
+                            required />
+                        </div>
+                        <div>
+                            <label class="collapsible__content--style-text" for="phone">Teléfono</label>
+                            <input class="js-input-text collapsible__content--input-form"
+                            placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required
+                            />
+                        </div>
+                        <div>
+                            <label class="collapsible__content--style-text" for="linkedin">Linkedin</label>
+                            <input class="js-input-text  collapsible__content--input-form"
+                            placeholder="Ej: linkedin.com/in/sally.hill" type="url" id="linkedin" name="linkedin"
+                            required />
+                        </div>
+                        <div>
+                            <label class="collapsible__content--style-text" for="github">Github</label>
+                            <input class="js-input-text collapsible__content--input-form"
+                            placeholder="Ej: @sally-hill" type="url" id="github" name="github" required
+                            />
+                        </div>
+                    </fieldset>
+                    <fieldset class="collapsible">
+                        <div class="collapsible__header"> <i class="collapsible__header--icon fas fa-share-alt"></i> 
+                             <h2 class="collapsible__header__title">comparte</h2>  <i class="collapsible__header--arrow-icon fas fa-chevron-up"></i> 
+                        </div>
+                    </fieldset>
+                    <section class="share-container">
+                        <div class="share-container__button">
+                            <button class="share-container__button--styles"><i class="share-container__button--icon-card far fa-address-card"></i> Crear
+                                tarjeta</button>
+                        </div>
+                        <div class="share-container__twitter">
+                            <p class="share-container__twitter__title">La tarjeta ha sido creada:</p> <a class="share-container__twitter--link"
+                            href="https://awesome-profile-card.com?id=A456DF0001">"https://awesome-profile-card.com?id=A456DF0001"</a> 
+                            <button
+                            class="share-container__twitter__btn"><i class="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir
+                                en twitter</button>
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </section>
+        <footer class="footer"> <small class="footer__copy">     <span>Awesome profile-cards &copy;2018</span>   </small> 
+            <div
+            class="footer__logo">
+                <img class="footer__logo--width" src="./assets/images/logo-adalab.png"
+                alt="logo-adalab" />
+                </div>
+        </footer>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+    </body>
+
+</html>

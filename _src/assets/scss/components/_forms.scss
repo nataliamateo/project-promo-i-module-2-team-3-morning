@@ -11,8 +11,27 @@
   border-bottom: 1px solid #d8d8d8;
   border-left: 0;
 }
+// abierto
+// comprobado que si quitas la a y pones i no funciona, el porque ni idea
+// tambien teníamos que indicar dentro del open que contenido se ve o no,nos faltaba poner el content
+.collapsable--open .collapsible__content {
+  display: grid;
+}
+.collapsable--open .collapsible__header--arrow-icon {
+  transform: rotate(180deg);
+  padding-right: 144px;
+}
+.collapsable--open .collapsible__header--arrow-icon--share {
+  padding-right: 132px;
+  font-size: 18px;
+  color: #54585a;
+  transform: rotate(180deg);
+}
+.collapsable--open2 .collapsible__content2--twitter {
+  display: flex;
+}
 
-@import 'components/_forms-design';
-@import 'components/_forms-fill';
-@import 'components/_forms-share';
-@import 'components/shareTwitter';
+@import "components/_forms-design";
+@import "components/_forms-fill";
+@import "components/_forms-share";
+@import "components/shareTwitter";

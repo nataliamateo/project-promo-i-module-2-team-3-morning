@@ -1,9 +1,11 @@
-// este se puede poner en el scss de forms para que se aplique a todo
 .collapsible {
   &__header {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr 2fr;
-    margin-top: 27px;
+    &--design {
+      padding-top: 27px;
+      padding-bottom: 10px;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 2fr;
+    }
     &--icon {
       color: #e17334;
       font-size: 18px;
@@ -25,16 +27,17 @@
   &__content {
     margin-top: 22px;
     margin-left: 20px;
-    display: flex;
-    justify-content: space-between;
-
+    display: none;
     &--title {
       font-family: "Open Sans";
       font-size: 14px;
       text-transform: uppercase;
       color: #54585a;
     }
-    &--palette {
+    &--position {
+      padding-left: 145px;
+    }
+    &__palette {
       display: flex;
       margin-bottom: 20px;
       &--radio {
