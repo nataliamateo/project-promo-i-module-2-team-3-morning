@@ -47,6 +47,8 @@ imageButtonReset.addEventListener("click", resetImageData);
 
 //start collapsible
 const collapsibleTrigger = document.querySelectorAll(".js-collapsible--trigger");
+const collapsibleTrigger2 = document.querySelector(".js-collapsible--trigger--2");
+console.log(collapsibleTrigger2);
 
 function updateCollapsible(ev) {
   const currentCollapsible = ev.currentTarget.parentElement;
@@ -66,3 +68,16 @@ function updateCollapsible(ev) {
 for (const item of collapsibleTrigger) {
   item.addEventListener("click", updateCollapsible);
 }
+
+function updateCollapsibleTwitter(ev) {
+  const currentCollapsibleTwitter = ev.currentTarget.parentElement;
+  if (currentCollapsibleTwitter.classList.contains("collapsable--open2")) {
+    currentCollapsibleTwitter.classList.remove("collapsable--open2");
+  } else {
+    currentCollapsibleTwitter.classList.add("collapsable--open2");
+    // } else if {
+
+    // }
+  }
+}
+collapsibleTrigger2.addEventListener("click", updateCollapsibleTwitter);
