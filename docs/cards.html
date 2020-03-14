@@ -46,101 +46,108 @@
             </section>
             <form action="" method="POST" class="articles-container">
                 <div class="principal-column">
-                    <fieldset class="open collapsible">
-                        <div class="ja-header collapsible__header"> <i class="far fa-object-ungroup collapsible__header--icon"></i> 
+                    <!-- el collapsible-open era cambiarle la i por la a -->
+                    <fieldset class="collapsible collapsible--open">
+                        <div class="js-collapsible--trigger collapsible__header--design"> <i class="far fa-object-ungroup collapsible__header--icon"></i> 
                              <h2 class="collapsible__header--title">Diseña</h2>  <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i> 
                         </div>
                         <div class="collapsible__content">
                              <h3 class="collapsible__content--title">Colores</h3> 
-                            <div>
-                                <label class="collapsible__content--palette" for="firstcolor">
-                                    <input class="collapsible__content--palette--radio" id="firstcolor" type="radio"
+                            <!--comentar con grupo como da un block el collapsable hay que darle un
+                            estilo al div que guarda las paletas -->
+                            <div class="collapsible__content--position">
+                                <label class="js-palette1 collapsible__content__palette" for="firstcolor">
+                                    <input class="collapsible__content__palette--radio" id="firstcolor" type="radio"
                                     value="colorsgreen" name="colors" />
-                                    <div class="collapsible__content--palette--box bg-dark-green"></div>
-                                    <div class="collapsible__content--palette--box bg-dirty-blue"></div>
-                                    <div class="collapsible__content--palette--box bg-hospital-green"></div>
+                                    <div class="collapsible__content__palette--box bg-dark-green"></div>
+                                    <div class="collapsible__content__palette--box bg-dirty-blue"></div>
+                                    <div class="collapsible__content__palette--box bg-hospital-green"></div>
                                 </label>
-                                <label class="collapsible__content--palette" for="secondcolor">
-                                    <input class="collapsible__content--palette--radio" id="secondcolor" type="radio"
+                                <label class="js-palette2 collapsible__content__palette" for="secondcolor">
+                                    <input class="collapsible__content__palette--radio" id="secondcolor" type="radio"
                                     value="colorsred" name="colors" />
-                                    <div class="collapsible__content--palette--box bg-dried-blood"></div>
-                                    <div class="collapsible__content--palette--box bg-rusty-red"></div>
-                                    <div class="collapsible__content--palette--box bg-tomato"></div>
+                                    <div class="collapsible__content__palette--box bg-dried-blood"></div>
+                                    <div class="collapsible__content__palette--box bg-rusty-red"></div>
+                                    <div class="collapsible__content__palette--box bg-tomato"></div>
                                 </label>
-                                <label class="collapsible__content--palette" for="tertiarycolor">
-                                    <input class="collapsible__content--palette--radio" id="tertiarycolor"
+                                <label class="js-palette3 collapsible__content__palette" for="tertiarycolor">
+                                    <input class="collapsible__content__palette--radio" id="tertiarycolor"
                                     type="radio" value="colorsblue" name="colors" />
-                                    <div class="collapsible__content--palette--box bg-slate"></div>
-                                    <div class="collapsible__content--palette--box bg-faded-orange"></div>
-                                    <div class="collapsible__content--palette--box bg-light-grey-blue"></div>
+                                    <div class="collapsible__content__palette--box bg-slate"></div>
+                                    <div class="collapsible__content__palette--box bg-faded-orange"></div>
+                                    <div class="collapsible__content__palette--box bg-light-grey-blue"></div>
                                 </label>
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="collapsible open">
-                        <div class="js-header collapsible__header"> <i class="far fa-keyboard collapsible__header--icon"></i> 
+                    <fieldset class="collapsible">
+                        <div class="js-collapsible--trigger collapsible__header--fill"> <i class="far fa-keyboard collapsible__header--icon"></i> 
                              <h2 class="collapsible__header__title">Rellena</h2>  <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i> 
                         </div>
-                        <div>
-                            <label class="collapsible__content--style-text" for="fullname">Nombre completo</label>
-                            <input class="js-input-text js-copyname collapsible__content--input-form"
-                            placeholder="Ej: Sally Jill" type="text" id="fullname" name="name" required
-                            />
-                        </div>
-                        <div>
-                            <label class="collapsible__content--style-text" for="job">Puesto</label>
-                            <input class="js-input-text js-copyjob collapsible__content--input-form"
-                            placeholder="Ej: Front-end" type="text" id="job" name="job" required />
-                        </div>
-                        <label class="collapsible__content--style-text" for="image">Imagen de perfil</label>
-                        <div class="collapsible__content--container-button">
-                            <button class="collapsible__content--style-text--button" type="button"
-                            class="image-button">Añadir imagen</button>
-                            <div class="collapsible__content--container-button--image-box"></div>
-                        </div>
-                        <div>
-                            <label class="collapsible__content--style-text" for="email">Email</label>
-                            <input class="js-input-text collapsible__content--input-form"
-                            placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email"
-                            required />
-                        </div>
-                        <div>
-                            <label class="collapsible__content--style-text" for="phone">Teléfono</label>
-                            <input class="js-input-text collapsible__content--input-form"
-                            placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required
-                            />
-                        </div>
-                        <div>
-                            <label class="collapsible__content--style-text" for="linkedin">Linkedin</label>
-                            <input class="js-input-text  collapsible__content--input-form"
-                            placeholder="Ej: linkedin.com/in/sally.hill" type="url" id="linkedin" name="linkedin"
-                            required />
-                        </div>
-                        <div>
-                            <label class="collapsible__content--style-text" for="github">Github</label>
-                            <input class="js-input-text collapsible__content--input-form"
-                            placeholder="Ej: @sally-hill" type="url" id="github" name="github" required
-                            />
+                        <div class="collapsible__content">
+                            <div>
+                                <label class="collapsible__content--style-text" for="fullname">Nombre completo</label>
+                                <input class="js-input-text js-copyname collapsible__content--input-form"
+                                placeholder="Ej: Sally Jill" type="text" id="fullname" name="name" required
+                                />
+                            </div>
+                            <div>
+                                <label class="collapsible__content--style-text" for="job">Puesto</label>
+                                <input class="js-input-text js-copyjob collapsible__content--input-form"
+                                placeholder="Ej: Front-end" type="text" id="job" name="job" required />
+                            </div>
+                            <label class="collapsible__content--style-text" for="image">Imagen de perfil</label>
+                            <div class="collapsible__content--container-button">
+                                <button class="collapsible__content--style-text--button" type="button"
+                                class="image-button">Añadir imagen</button>
+                                <div class="collapsible__content--container-button--image-box"></div>
+                            </div>
+                            <div>
+                                <label class="collapsible__content--style-text" for="email">Email</label>
+                                <input class="js-input-text collapsible__content--input-form"
+                                placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email"
+                                required />
+                            </div>
+                            <div>
+                                <label class="collapsible__content--style-text" for="phone">Teléfono</label>
+                                <input class="js-input-text collapsible__content--input-form"
+                                placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required
+                                />
+                            </div>
+                            <div>
+                                <label class="collapsible__content--style-text" for="linkedin">Linkedin</label>
+                                <input class="js-input-text  collapsible__content--input-form"
+                                placeholder="Ej: linkedin.com/in/sally.hill" type="url" id="linkedin" name="linkedin"
+                                required />
+                            </div>
+                            <div>
+                                <label class="collapsible__content--style-text" for="github">Github</label>
+                                <input class="js-input-text collapsible__content--input-form"
+                                placeholder="Ej: @sally-hill" type="url" id="github" name="github" required
+                                />
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset class="collapsible">
-                        <div class="collapsible__header"> <i class="collapsible__header--icon fas fa-share-alt"></i> 
-                             <h2 class="collapsible__header__title">comparte</h2>  <i class="collapsible__header--arrow-icon fas fa-chevron-up"></i> 
+                        <div class="js-collapsible--trigger collapsible__header--share"> <i class="collapsible__header--icon fas fa-share-alt"></i> 
+                             <h2 class="collapsible__header__title">comparte</h2>  <i class="collapsible__header--arrow-icon--share fas fa-chevron-up"></i> 
+                        </div>
+                        <div>
+                            <section class="share-container collapsable--open2">
+                                <div class="js-collapsible--trigger--2 share-container__button collapsible__content">
+                                    <button class="share-container__button--styles"><i class="share-container__button--icon-card far fa-address-card"></i> Crear
+                                        tarjeta</button>
+                                </div>
+                                <div class="share-container__twitter collapsible__content2--twitter">
+                                    <p class=" share-container__twitter__title">La tarjeta ha sido creada:</p> <a class="share-container__twitter--link"
+                                    href="https://awesome-profile-card.com?id=A456DF0001">"https://awesome-profile-card.com?id=A456DF0001"</a> 
+                                    <button
+                                    class="share-container__twitter__btn"><i class="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir
+                                        en twitter</button>
+                                </div>
+                            </section>
                         </div>
                     </fieldset>
-                    <section class="share-container">
-                        <div class="share-container__button">
-                            <button class="share-container__button--styles"><i class="share-container__button--icon-card far fa-address-card"></i> Crear
-                                tarjeta</button>
-                        </div>
-                        <div class="share-container__twitter">
-                            <p class="share-container__twitter__title">La tarjeta ha sido creada:</p> <a class="share-container__twitter--link"
-                            href="https://awesome-profile-card.com?id=A456DF0001">"https://awesome-profile-card.com?id=A456DF0001"</a> 
-                            <button
-                            class="share-container__twitter__btn"><i class="share-container__twitter--ico-twitter fab fa-twitter"></i>Compartir
-                                en twitter</button>
-                        </div>
-                    </section>
                 </div>
             </form>
         </section>
