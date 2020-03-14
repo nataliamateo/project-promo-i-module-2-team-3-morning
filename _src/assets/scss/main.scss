@@ -1,9 +1,5 @@
-@import 'core/reset';
-<<<<<<< HEAD
-@import 'layout/header';
-=======
-@import 'core/variables';
-@import './pages/home';
-@import 'components/forms';
-@import 'layout/footer';
->>>>>>> master
+@import "core/reset";
+@import "core/variables";
+@import "./pages/home";
+@import "components/forms";
+@import "layout/footer";
