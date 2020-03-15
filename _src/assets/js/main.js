@@ -35,8 +35,8 @@ function resetUserData() {
     allInputDataOff.value = '';
   }
 
-  imageName.innerHTML = 'Nombre Apellido';
-  imageJob.innerHTML = 'Front-end developer';
+  document.querySelector('.js-cardname').innerHTML = 'Nombre Apellido';
+  document.querySelector('.js-cardjob').innerHTML = 'Front-end developer';
   cardElement.classList.remove('js-card-palette2');
   cardElement.classList.remove('js-card-palette3');
   cardElement.classList.add('js-card-palette1');
