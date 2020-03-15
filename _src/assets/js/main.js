@@ -5,17 +5,17 @@ const pasteName = document.querySelector('.js-pastename');
 const copyJob = document.querySelector('.js-copyjob');
 const pasteJob = document.querySelector('.js-pastejob');
 
-function addText(ev) {
-  pasteName.innerHTML = event.currentTarget.value;
-  console.log(pasteName.innerHTML);
-}
-copyName.addEventListener('keyup', addText);
+// function addText(ev) {
+//   pasteName.innerHTML = event.currentTarget.value;
+//   console.log(pasteName.innerHTML);
+// }
+// copyName.addEventListener('keyup', addText);
 
-function addJob(ev) {
-  pasteJob.innerHTML = event.currentTarget.value;
-}
+// function addJob(ev) {
+//   pasteJob.innerHTML = event.currentTarget.value;
+// }
 
-copyJob.addEventListener('keyup', addJob);
+// copyJob.addEventListener('keyup', addJob);
 
 //BOTON RESET
 //necesitamos recorrer todos los imputs, y poner todos sus values a '', userDetailsoff.value = "";, tocando solo el value, los placeholder igual se quedan.
@@ -62,7 +62,7 @@ imageButtonReset.addEventListener('click', resetUserData);
 
 // userDetails.addEventListener("keyup", handleUserDetails);
 
-//start collapsible
+//START COLLAPSIBLE
 const collapsibleTrigger = document.querySelectorAll('.js-collapsible--trigger');
 const collapsibleTrigger2 = document.querySelector('.js-collapsible--trigger--2');
 console.log(collapsibleTrigger2);
@@ -122,3 +122,42 @@ inputPalette2.addEventListener('click', paintPalette);
 inputPalette3.addEventListener('click', paintPalette);
 
 // AQUÍ ACABAN COLORES DE LA PALETA
+
+// FORMULARIO RELLENA REALIZADO DE MANERA LARGA
+const userName = document.querySelector('.js-input-name');
+const userJob = document.querySelector('.js-input-job');
+const userMail = document.querySelector('.js-input-email');
+const userPhone = document.querySelector('.js-input-phone');
+const userLinkedin = document.querySelector('.js-input-linkedin');
+const userGithub = document.querySelector('.js-input-github');
+
+function getUserName() {
+  document.querySelector('.js-cardname').innerHTML = userName.value;
+}
+
+function getUserJob() {
+  document.querySelector('.js-cardjob').innerHTML = userJob.value;
+}
+function getUserMail() {
+  document.querySelector('.js-cardemail').href = 'mailto:' + userMail.value;
+}
+
+function getUserPhone() {
+  document.querySelector('.js-cardphone').href = 'tel:' + userPhone.value;
+}
+function getUserLinkedin() {
+  document.querySelector('.js-cardlinkedin').href + userLinkedin.value;
+}
+
+function getUserGithub() {
+  document.querySelector('.js-cardgithub').href = '' + userGithub.value;
+}
+
+userName.addEventListener('keyup', getUserName);
+userJob.addEventListener('keyup', getUserJob);
+userMail.addEventListener('keyup', getUserMail);
+userPhone.addEventListener('keyup', getUserPhone);
+userLinkedin.addEventListener('keyup', getUserLinkedin);
+userGithub.addEventListener('keyup', getUserGithub);
+
+// AQUI ACABA LA PARTE DEL FORMULARIO RELLENAR
