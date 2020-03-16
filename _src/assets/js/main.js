@@ -130,27 +130,35 @@ const userMail = document.querySelector(".js-input-email");
 const userPhone = document.querySelector(".js-input-phone");
 const userLinkedin = document.querySelector(".js-input-linkedin");
 const userGithub = document.querySelector(".js-input-github");
+// PRINT EN LA TARJETA prueba para el get item del localstore
+const printJob = document.querySelector(".js-cardjob");
 
 function getUserName() {
   document.querySelector(".js-cardname").innerHTML = userName.value;
+  localStorage.setItem("name", JSON.stringify(userName.value));
 }
 
 function getUserJob() {
-  document.querySelector(".js-cardjob").innerHTML = userJob.value;
+  printJob.innerHTML = userJob.value;
+  localStorage.setItem("job", JSON.stringify(userJob.value));
 }
 function getUserMail() {
   document.querySelector(".js-cardemail").href = "mailto:" + userMail.value;
+  localStorage.setItem("mail", JSON.stringify(userMail.value));
 }
 
 function getUserPhone() {
   document.querySelector(".js-cardphone").href = "tel:" + userPhone.value;
+  localStorage.setItem("phone", JSON.stringify(userPhone.value));
 }
 function getUserLinkedin() {
-  document.querySelector(".js-cardlinkedin").href + userLinkedin.value;
+  document.querySelector(".js-cardlinkedin").href = userLinkedin.value;
+  localStorage.setItem("linkedin", JSON.stringify(userLinkedin.value));
 }
 
 function getUserGithub() {
   document.querySelector(".js-cardgithub").href = "" + userGithub.value;
+  localStorage.setItem("github", JSON.stringify(userMail.value));
 }
 
 userName.addEventListener("keyup", getUserName);
@@ -160,4 +168,24 @@ userPhone.addEventListener("keyup", getUserPhone);
 userLinkedin.addEventListener("keyup", getUserLinkedin);
 userGithub.addEventListener("keyup", getUserGithub);
 
+// const userData = {
+//   name: userName.value,
+//   job: userJob.value,
+//   mail: userMail.value,
+//   phone: userPhone.value,
+//   linkedin: userLinkedin.value,
+//   github: userGithub.value
+// };
+
+// const saveUserData = localStorage.getItem("userData");
+const saveUserData = localStorage.getItem("job");
+console.log(saveUserData);
+// userName.value = saveUserData.name;
+// userJob.value = saveUserData.job;
+// userMail.value = saveUserData.mail;
+// userPhone.value = saveUserData.phone;
+// userLinkedin.value = saveUserData.linkedin;
+// userGithub.value = saveUserData.github;
+userJob.value = saveUserData;
+printJob.innerHTML = saveUserData;
 // AQUI ACABA LA PARTE DEL FORMULARIO RELLENAR
