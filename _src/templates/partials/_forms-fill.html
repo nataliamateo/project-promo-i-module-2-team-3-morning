@@ -14,14 +14,16 @@
       <input class="js-input-job js-input-text collapsible__content--input-form" placeholder="Ej: Front-end" type="text" id="job" name="job" required />
     </div>
     <label class="collapsible__content--style-text" for="image"> Imagen de perfil</label>
-    <div class="collapsible__content--container-button">
-      <button class="collapsible__content--style-text--button" type="button" class="image-button">Añadir imagen</button>
-      <div class="collapsible__content--container-button--image-box"></div>
+    <div class=" action collapsible__content--container-button">
+      <button class="action__upload-btn js__profile-trigger collapsible__content--style-text--button" type="button">Añadir imagen</button>
+      <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn" />
     </div>
-    <div>
-      <label class="collapsible__content--style-text" for="phone"> Teléfono</label>
-      <input class="js-input-phone js-input-text collapsible__content--input-form" placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required />
+    <div class="profile">
+      <div class="js__profile-preview collapsible__content--container-button--image-box"></div>
     </div>
+    <label class="collapsible__content--style-text" for="phone"> Teléfono</label>
+    <input class="js-input-phone js-input-text collapsible__content--input-form" placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required />
+    <!-- </div> -->
     <div>
       <label class="collapsible__content--style-text" for="email"> Email</label>
       <input class="js-input-email  js-input-text collapsible__content--input-form" placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email" required />
