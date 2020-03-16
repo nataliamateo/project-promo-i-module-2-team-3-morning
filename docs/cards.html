@@ -25,20 +25,20 @@
             <section class="img-creation">
                 <div class="img-creation__container">
                     <button class="js-reset img-creation__button"><i class="far fa-trash-alt"></i>Reset</button>
-                    <article class="img-creation__card">
-                        <div class="img-creation__card--container">
-                             <h2 class="js-pastename img-creation__card--name">Nombre apellido</h2> 
-                             <h3 class="js-pastejob img-creation__card--profession">Front-end developer</h3> 
+                    <article class="js-card js-card-palette1 img-creation__card">
+                        <div class="js-border img-creation__card--container">
+                             <h2 class="js-cardname img-creation__card--name" value="">Nombre apellido</h2> 
+                             <h3 class="js-cardjob img-creation__card--profession" value="">Front-end developer</h3> 
                         </div>
                         <img src="https://via.placeholder.com/240x200" alt="" />
                         <ul class="img-creation__card--list">
-                            <li class="img-creation__card--round"> <a href="#"><i class="fas fa-mobile-alt"></i></a> 
+                            <li class="js-card-phone img-creation__card--round"> <a class="js-cardphone" href="tel:"><i class="fas fa-mobile-alt"></i></a> 
                             </li>
-                            <li class="img-creation__card--round"> <a href=""><i class="far fa-envelope"></i></a> 
+                            <li class="js-card-email img-creation__card--round"> <a class="js-cardemail" href="mailto:"><i class="far fa-envelope"></i></a> 
                             </li>
-                            <li class="img-creation__card--round"> <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                            <li class="js-card-linkedin img-creation__card--round"> <a class="js-cardlinkedin" href alt="Linkedin"><i class="fab fa-linkedin-in"></i></a> 
                             </li>
-                            <li class="img-creation__card--round"> <a href="#"><i class="fab fa-github-alt"></i></a> 
+                            <li class="js-card-linkedin img-creation__card--round"> <a class="js-cardgithub" href=""><i class="fab fa-github-alt"></i></a> 
                             </li>
                         </ul>
                 </div>
@@ -47,7 +47,7 @@
             <form action="" method="POST" class="articles-container">
                 <div class="principal-column">
                     <!-- el collapsible-open era cambiarle la i por la a -->
-                    <fieldset class="collapsible collapsible--open">
+                    <fieldset class="collapsible collapsable--open">
                         <div class="js-collapsible--trigger collapsible__header--design"> <i class="far fa-object-ungroup collapsible__header--icon"></i> 
                              <h2 class="collapsible__header--title">Diseña</h2>  <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i> 
                         </div>
@@ -57,22 +57,23 @@
                             estilo al div que guarda las paletas -->
                             <div class="collapsible__content--position">
                                 <label class="js-palette1 collapsible__content__palette" for="firstcolor">
-                                    <input class="collapsible__content__palette--radio" id="firstcolor" type="radio"
-                                    value="colorsgreen" name="colors" />
+                                    <input class="js-palette1 js-radio collapsible__content__palette--radio"
+                                    id="firstcolor" type="radio" value="1" name="colors" checked="checked"
+                                    />
                                     <div class="collapsible__content__palette--box bg-dark-green"></div>
                                     <div class="collapsible__content__palette--box bg-dirty-blue"></div>
                                     <div class="collapsible__content__palette--box bg-hospital-green"></div>
                                 </label>
                                 <label class="js-palette2 collapsible__content__palette" for="secondcolor">
-                                    <input class="collapsible__content__palette--radio" id="secondcolor" type="radio"
-                                    value="colorsred" name="colors" />
+                                    <input class="js-palette2 js-radio collapsible__content__palette--radio"
+                                    id="secondcolor" type="radio" value="2" name="colors" />
                                     <div class="collapsible__content__palette--box bg-dried-blood"></div>
                                     <div class="collapsible__content__palette--box bg-rusty-red"></div>
                                     <div class="collapsible__content__palette--box bg-tomato"></div>
                                 </label>
                                 <label class="js-palette3 collapsible__content__palette" for="tertiarycolor">
-                                    <input class="collapsible__content__palette--radio" id="tertiarycolor"
-                                    type="radio" value="colorsblue" name="colors" />
+                                    <input class="js-palette3 js-radio collapsible__content__palette--radio"
+                                    id="tertiarycolor" type="radio" value="3" name="colors" />
                                     <div class="collapsible__content__palette--box bg-slate"></div>
                                     <div class="collapsible__content__palette--box bg-faded-orange"></div>
                                     <div class="collapsible__content__palette--box bg-light-grey-blue"></div>
@@ -80,20 +81,20 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset class="collapsible">
+                    <fieldset class="collapsible js-myform">
                         <div class="js-collapsible--trigger collapsible__header--fill"> <i class="far fa-keyboard collapsible__header--icon"></i> 
                              <h2 class="collapsible__header__title">Rellena</h2>  <i class="fas fa-chevron-up collapsible__header--arrow-icon"></i> 
                         </div>
                         <div class="collapsible__content">
                             <div>
                                 <label class="collapsible__content--style-text" for="fullname">Nombre completo</label>
-                                <input class="js-input-text js-copyname collapsible__content--input-form"
+                                <input class="js-input-name js-input-text collapsible__content--input-form"
                                 placeholder="Ej: Sally Jill" type="text" id="fullname" name="name" required
                                 />
                             </div>
                             <div>
                                 <label class="collapsible__content--style-text" for="job">Puesto</label>
-                                <input class="js-input-text js-copyjob collapsible__content--input-form"
+                                <input class="js-input-job js-input-text collapsible__content--input-form"
                                 placeholder="Ej: Front-end" type="text" id="job" name="job" required />
                             </div>
                             <label class="collapsible__content--style-text" for="image">Imagen de perfil</label>
@@ -103,26 +104,26 @@
                                 <div class="collapsible__content--container-button--image-box"></div>
                             </div>
                             <div>
-                                <label class="collapsible__content--style-text" for="email">Email</label>
-                                <input class="js-input-text collapsible__content--input-form"
-                                placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email"
-                                required />
-                            </div>
-                            <div>
                                 <label class="collapsible__content--style-text" for="phone">Teléfono</label>
-                                <input class="js-input-text collapsible__content--input-form"
+                                <input class="js-input-phone js-input-text collapsible__content--input-form"
                                 placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required
                                 />
                             </div>
                             <div>
+                                <label class="collapsible__content--style-text" for="email">Email</label>
+                                <input class="js-input-email  js-input-text collapsible__content--input-form"
+                                placeholder="Ej: sally-hill@gmail.com" type="email" id="email" name="email"
+                                required />
+                            </div>
+                            <div>
                                 <label class="collapsible__content--style-text" for="linkedin">Linkedin</label>
-                                <input class="js-input-text  collapsible__content--input-form"
+                                <input class="js-input-linkedin js-input-text collapsible__content--input-form"
                                 placeholder="Ej: linkedin.com/in/sally.hill" type="url" id="linkedin" name="linkedin"
                                 required />
                             </div>
                             <div>
                                 <label class="collapsible__content--style-text" for="github">Github</label>
-                                <input class="js-input-text collapsible__content--input-form"
+                                <input class="js-input-github js-input-text collapsible__content--input-form"
                                 placeholder="Ej: @sally-hill" type="url" id="github" name="github" required
                                 />
                             </div>
@@ -133,7 +134,7 @@
                              <h2 class="collapsible__header__title">comparte</h2>  <i class="collapsible__header--arrow-icon--share fas fa-chevron-up"></i> 
                         </div>
                         <div>
-                            <section class="share-container collapsable--open2">
+                            <section class="share-container">
                                 <div class="js-collapsible--trigger--2 share-container__button collapsible__content">
                                     <button class="share-container__button--styles"><i class="share-container__button--icon-card far fa-address-card"></i> Crear
                                         tarjeta</button>
