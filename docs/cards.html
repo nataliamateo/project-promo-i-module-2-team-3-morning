@@ -30,15 +30,15 @@
                              <h2 class="js-cardname js-pastename img-creation__card--name" value="">Nombre apellido</h2> 
                              <h3 class="js-cardjob img-creation__card--profession" value="">Front-end developer</h3> 
                         </div>
-                        <img src="https://via.placeholder.com/240x200" alt="" />
+                        <div class="profile__image js__profile-image" style="background-image: url(https://via.placeholder.com/240x200)"></div>
                         <ul class="img-creation__card--list">
-                            <li class="js-card-phone img-creation__card--round"> <a class="js-cardphone js-pastename" href="tel:"><i class="fas fa-mobile-alt"></i></a> 
+                            <li class="js-card-phone img-creation__card--round"> <a class="js-cardphone js-pastename" href="tel:"><i class="fas fa-mobile-alt" title="Teléfono"></i></a> 
                             </li>
-                            <li class="js-card-email img-creation__card--round"> <a class="js-cardemail js-pastename" href="mailto:"><i class="far fa-envelope"></i></a> 
+                            <li class="js-card-email img-creation__card--round"> <a class="js-cardemail js-pastename" href="mailto:"><i class="far fa-envelope" title="Enviar email"></i></a> 
                             </li>
-                            <li class="js-card-linkedin img-creation__card--round"> <a class="js-cardlinkedin js-pastename" href alt="Linkedin"><i class="fab fa-linkedin-in"></i></a> 
+                            <li class="js-card-linkedin img-creation__card--round"> <a class="js-cardlinkedin js-pastename" href alt="Linkedin"><i class="fab fa-linkedin-in" title="Ir al Linkedin"></i></a> 
                             </li>
-                            <li class="js-card-linkedin img-creation__card--round"> <a class="js-cardgithub js-pastename" href=""><i class="fab fa-github-alt"></i></a> 
+                            <li class="js-card-github img-creation__card--round"> <a class="js-cardgithub js-pastename" href=""><i class="fab fa-github-alt" title="Ir al Github"></i></a> 
                             </li>
                         </ul>
                 </div>
@@ -98,17 +98,19 @@
                                 placeholder="Ej: Front-end" type="text" id="job" name="job" required />
                             </div>
                             <label class="collapsible__content--style-text" for="image">Imagen de perfil</label>
-                            <div class="collapsible__content--container-button">
-                                <button class="collapsible__content--style-text--button" type="button"
-                                class="image-button">Añadir imagen</button>
-                                <div class="collapsible__content--container-button--image-box"></div>
-                            </div>
-                            <div>
-                                <label class="collapsible__content--style-text" for="phone">Teléfono</label>
-                                <input class="js-input-phone js-input-text collapsible__content--input-form"
-                                placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required
+                            <div class=" action collapsible__content--container-button">
+                                <button class="action__upload-btn js__profile-trigger collapsible__content--style-text--button"
+                                type="button">Añadir imagen</button>
+                                <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn"
                                 />
                             </div>
+                            <div class="profile">
+                                <div class="js__profile-preview collapsible__content--container-button--image-box"></div>
+                            </div>
+                            <label class="collapsible__content--style-text" for="phone">Teléfono</label>
+                            <input class="js-input-phone js-input-text collapsible__content--input-form"
+                            placeholder="Ej: 555-55-55-55" type="tel" id="phone" name="phone" required
+                            />
                             <div>
                                 <label class="collapsible__content--style-text" for="email">Email</label>
                                 <input class="js-input-email  js-input-text collapsible__content--input-form"
