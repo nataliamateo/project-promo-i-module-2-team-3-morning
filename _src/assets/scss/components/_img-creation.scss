@@ -131,3 +131,15 @@
     border: 2px solid #a0c0cf;
   }
 }
+
+.profile__image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 240px;
+}
+
+.profile {
+  height: 0px;
+}
