@@ -1,4 +1,5 @@
 "use strict";
+
 // const userData = {
 //  palette:"",
 //   name: userName.value,
@@ -84,9 +85,6 @@ function updateCollapsibleTwitter(ev) {
     currentCollapsibleTwitter.classList.remove("collapsable--open2");
   } else {
     currentCollapsibleTwitter.classList.add("collapsable--open2");
-    // } else if {
-
-    // }
   }
 }
 collapsibleTrigger2.addEventListener("click", updateCollapsibleTwitter);
@@ -122,12 +120,12 @@ const userMail = document.querySelector(".js-input-email");
 const userPhone = document.querySelector(".js-input-phone");
 const userLinkedin = document.querySelector(".js-input-linkedin");
 const userGithub = document.querySelector(".js-input-github");
-// PRINT EN LA TARJETA prueba para el get item del localstore
+
 const printJob = document.querySelector(".js-cardjob");
 
 function getUserName() {
   document.querySelector(".js-cardname").innerHTML = userName.value;
-  localStorage.setItem("name", JSON.stringify(userName.value));
+  localStorage.setItem("name", userName.value);
 }
 
 function getUserJob() {
@@ -136,21 +134,21 @@ function getUserJob() {
 }
 function getUserMail() {
   document.querySelector(".js-cardemail").href = "mailto:" + userMail.value;
-  localStorage.setItem("mail", JSON.stringify(userMail.value));
+  localStorage.setItem("mail", userMail.value);
 }
 
 function getUserPhone() {
   document.querySelector(".js-cardphone").href = "tel:" + userPhone.value;
-  localStorage.setItem("phone", JSON.stringify(userPhone.value));
+  localStorage.setItem("phone", userPhone.value);
 }
 function getUserLinkedin() {
-  document.querySelector(".js-cardlinkedin").href = userLinkedin.value;
-  localStorage.setItem("linkedin", JSON.stringify(userLinkedin.value));
+  document.querySelector(".js-cardlinkedin").href + userLinkedin.value;
+  localStorage.setItem("linkedin", userLinkedin.value);
 }
 
 function getUserGithub() {
   document.querySelector(".js-cardgithub").href = "" + userGithub.value;
-  localStorage.setItem("github", JSON.stringify(userMail.value));
+  localStorage.setItem("github", userMail.value);
 }
 
 userName.addEventListener("keyup", getUserName);
@@ -161,14 +159,66 @@ userLinkedin.addEventListener("keyup", getUserLinkedin);
 userGithub.addEventListener("keyup", getUserGithub);
 
 // const saveUserData = localStorage.getItem("userData");
-const saveUserData = localStorage.getItem("job");
-console.log(saveUserData);
+// const saveUserData = localStorage.getItem("job");
+// console.log(saveUserData);
 // userName.value = saveUserData.name;
 // userJob.value = saveUserData.job;
 // userMail.value = saveUserData.mail;
 // userPhone.value = saveUserData.phone;
 // userLinkedin.value = saveUserData.linkedin;
 // userGithub.value = saveUserData.github;
-userJob.value = saveUserData;
-printJob.innerHTML = saveUserData;
+// userJob.value = saveUserData;
+// printJob.innerHTML = saveUserData;
+
 // AQUI ACABA LA PARTE DEL FORMULARIO RELLENAR
+
+// AÑADIR IMAGEN
+const fr = new FileReader();
+const uploadBtn = document.querySelector(".js__profile-trigger");
+const fileField = document.querySelector(".js__profile-upload-btn");
+const profileImage = document.querySelector(".js__profile-image");
+const profilePreview = document.querySelector(".js__profile-preview");
+
+/**
+ * Recoge el archivo añadido al campo de tipo "file"
+ * y lo carga en nuestro objeto FileReader para que
+ * lo convierta a algo con lo que podamos trabajar.
+ * Añade un listener al FR para que ejecute una función
+ * al tener los datos listos
+ * @param {evento} e
+ */
+function getImage(e) {
+  var myFile = e.currentTarget.files[0];
+  fr.addEventListener("load", writeImage);
+  fr.readAsDataURL(myFile);
+}
+
+/**
+ * Una vez tenemos los datos listos en el FR podemos
+ * trabajar con ellos ;)
+ */
+function writeImage() {
+  /* En la propiedad `result` de nuestro FR se almacena
+   * el resultado
+   */
+  profileImage.style.backgroundImage = `url(${fr.result})`;
+  profilePreview.style.backgroundImage = `url(${fr.result})`;
+}
+
+/**
+ * Genera un click automático en nuesto campo de tipo "file"
+ * que está oculto
+ */
+function fakeFileClick() {
+  fileField.click();
+}
+
+/**
+ * Añadimos los listeners necesarios:
+ * - al botón visible para generar el click automático
+ * - al campo oculto para cuando cambie su value
+ */
+uploadBtn.addEventListener("click", fakeFileClick);
+fileField.addEventListener("change", getImage);
+
+// FINAL AÑADIR IMAGEN
