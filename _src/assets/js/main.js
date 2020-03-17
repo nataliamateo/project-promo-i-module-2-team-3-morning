@@ -1,21 +1,13 @@
 "use strict";
-
-// const copyName = document.querySelector('.js-copyname');
-// const pasteName = document.querySelector('.js-pastename');
-// const copyJob = document.querySelector('.js-copyjob');
-// const pasteJob = document.querySelector('.js-pastejob');
-
-// function addText(ev) {
-//   pasteName.innerHTML = event.currentTarget.value;
-//   console.log(pasteName.innerHTML);
-// }
-// copyName.addEventListener('keyup', addText);
-
-// function addJob(ev) {
-//   pasteJob.innerHTML = event.currentTarget.value;
-// }
-
-// copyJob.addEventListener('keyup', addJob);
+// const userData = {
+//  palette:"",
+//   name: userName.value,
+//   job: userJob.value,
+//   mail: userMail.value,
+//   phone: userPhone.value,
+//   linkedin: userLinkedin.value,
+//   github: userGithub.value
+// };
 
 //BOTON RESET
 //necesitamos recorrer todos los imputs, y poner todos sus values a '', userDetailsoff.value = "";, tocando solo el value, los placeholder igual se quedan.
@@ -140,7 +132,7 @@ function getUserName() {
 
 function getUserJob() {
   printJob.innerHTML = userJob.value;
-  localStorage.setItem("job", JSON.stringify(userJob.value));
+  localStorage.setItem("job", userJob.value);
 }
 function getUserMail() {
   document.querySelector(".js-cardemail").href = "mailto:" + userMail.value;
@@ -167,15 +159,6 @@ userMail.addEventListener("keyup", getUserMail);
 userPhone.addEventListener("keyup", getUserPhone);
 userLinkedin.addEventListener("keyup", getUserLinkedin);
 userGithub.addEventListener("keyup", getUserGithub);
-
-// const userData = {
-//   name: userName.value,
-//   job: userJob.value,
-//   mail: userMail.value,
-//   phone: userPhone.value,
-//   linkedin: userLinkedin.value,
-//   github: userGithub.value
-// };
 
 // const saveUserData = localStorage.getItem("userData");
 const saveUserData = localStorage.getItem("job");
