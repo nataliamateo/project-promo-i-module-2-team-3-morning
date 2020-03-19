@@ -35,6 +35,7 @@ function resetUserData() {
   console.log(cardElement);
   // propago los datos desde el formulario hasta la card y el local storage
   getUserName();
+  getUserJob();
   paintPalette();
 }
 
