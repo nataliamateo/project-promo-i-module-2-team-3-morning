@@ -9,6 +9,7 @@
   width: 199px;
   height: 50px;
   border: 0;
+  margin-right: 20px;
   margin-bottom: 30px;
   border-radius: 12px;
   background-color: #e17334;
@@ -26,7 +27,7 @@
 }
 
 .share-container__twitter {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -60,6 +61,7 @@
   width: 181px;
   height: 30px;
   margin-bottom: 30px;
+  padding-top: 5px;
   border: 0;
   border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
@@ -79,4 +81,24 @@
 }
 .collapsible__content2--twitter {
   display: none;
+}
+
+// código copiado
+.error {
+  border: 1px solid red;
+}
+.able {
+  border: 1px solid green;
+}
+.disabled {
+  background-color: rgb(219, 215, 215);
+  cursor: none;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+}
+.show {
+  display: flex;
 }

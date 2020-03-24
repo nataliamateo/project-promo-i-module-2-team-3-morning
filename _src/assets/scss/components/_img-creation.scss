@@ -1,31 +1,47 @@
-.img-creation {
-  // height: 457px;
-  padding: 38px 35px 40px 45px;
-  background-color: #dde9ed;
+.img-creation2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  height: 90%;
   @media all and (min-width: 768px) {
     width: 50%;
     margin: 23px 40px 21px 0px;
+    align-self: flex-start;
   }
   @media all and (min-width: 1200px) {
     width: 70%;
     margin: 21px 40px 20px 0px;
   }
+}
+
+.img-creation {
+  padding: 38px 35px 40px 45px;
+  background-image: url(../images/01.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  @media all and (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 100%;
+    height: 100%;
+  }
 
   &__button {
     margin-bottom: 20px;
-    background: transparent;
     width: 75px;
     height: 30px;
     border-radius: 15px;
     border: 1px solid white;
     text-transform: uppercase;
-    font-family: 'Open Sans';
-    color: #54585a;
+    font-family: "Open Sans";
+    color: #000000;
     cursor: pointer;
     align-self: flex-start;
   }
@@ -43,7 +59,7 @@
     }
     &--name {
       // color: #114e4e;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 18px;
       font-weight: bold;
       line-height: 1.11;
@@ -52,7 +68,7 @@
     }
     &--profession {
       color: #54585a;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-size: 16px;
       line-height: 1.25;
     }
@@ -88,6 +104,9 @@
 }
 
 .js-card-palette1 {
+  .js-background {
+    background-image: url(../images/01.jpg);
+  }
   .js-pastename {
     color: #114e4e;
   }
@@ -103,6 +122,9 @@
 }
 
 .js-card-palette2 {
+  .js-background {
+    background-image: url(../images/04.jpg);
+  }
   .js-pastename {
     color: #420101;
   }
@@ -118,6 +140,9 @@
 }
 
 .js-card-palette3 {
+  .js-background {
+    background-image: url(../images/05.jpg);
+  }
   .js-pastename {
     color: #3e5b65;
   }

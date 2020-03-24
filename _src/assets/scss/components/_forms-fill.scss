@@ -75,7 +75,7 @@
 
 .collapsible__content--style-text.required::after {
   color: #e17334;
-  content: " *";
+  content: "*";
   display: inline;
   font-weight: bold;
 }
@@ -84,7 +84,6 @@
 
 .action {
   text-align: center;
-  // margin: 30px;
 }
 .action__upload-btn {
   box-shadow: 0 0 5px rgba(#000, 0.3);
@@ -93,8 +92,6 @@
   font-size: 14px;
 }
 .action__hiddenField {
-  //   /* Ocultamos el input de tipo "file" porque no podemos
-  //   darle los estilos que queremos */
   display: none;
   position: relative;
   left: -140px;
@@ -104,5 +101,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // border: 1px solid #ccc;
 }
