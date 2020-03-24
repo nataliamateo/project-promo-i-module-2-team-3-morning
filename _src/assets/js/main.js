@@ -29,7 +29,7 @@ function resetUserData() {
   createLink.classList.add("show");
   shareButton.setAttribute("disabled", "false");
   shareButton.classList.remove("disabled");
-  // console.log(cardElement);
+
   // propago los datos desde el formulario hasta la card y el local storage
   getUserName();
   getUserJob();
@@ -58,9 +58,6 @@ imageButtonReset.addEventListener("click", resetUserData);
 
 //START COLLAPSIBLE
 const collapsibleTrigger = document.querySelectorAll(".js-collapsible--trigger");
-// const collapsibleTrigger2 = document.querySelector(".js-collapsible--trigger--2");
-// console.log(collapsibleTrigger2);
-
 function updateCollapsible(ev) {
   const currentCollapsible = ev.currentTarget.parentElement;
   if (currentCollapsible.classList.contains("collapsable--open")) {
@@ -79,16 +76,6 @@ function updateCollapsible(ev) {
 for (const item of collapsibleTrigger) {
   item.addEventListener("click", updateCollapsible);
 }
-
-// function updateCollapsibleTwitter(ev) {
-//   const currentCollapsibleTwitter = ev.currentTarget.parentElement;
-//   if (currentCollapsibleTwitter.classList.contains("collapsable--open2")) {
-//     currentCollapsibleTwitter.classList.remove("collapsable--open2");
-//   } else {
-//     currentCollapsibleTwitter.classList.add("collapsable--open2");
-//   }
-// }
-// collapsibleTrigger2.addEventListener("click", updateCollapsibleTwitter);
 
 // COLORES DE LA PALETA
 
@@ -122,31 +109,32 @@ const userMail = document.querySelector(".js-input-email");
 const userPhone = document.querySelector(".js-input-phone");
 const userLinkedin = document.querySelector(".js-input-linkedin");
 const userGithub = document.querySelector(".js-input-github");
-
+// name
 function getUserName() {
   document.querySelector(".js-cardname").innerHTML = userName.value || "Nombre Apellido";
   localStorage.setItem("name", userName.value);
 }
-
+// job
 function getUserJob() {
   document.querySelector(".js-cardjob").innerHTML = userJob.value || "Front end developer";
   localStorage.setItem("job", userJob.value);
 }
-
+// mail
 function getUserMail() {
   document.querySelector(".js-cardemail").href = "mailto:" + userMail.value;
   localStorage.setItem("mail", userMail.value);
 }
-
+// phone
 function getUserPhone() {
   document.querySelector(".js-cardphone").href = "tel:" + userPhone.value;
   localStorage.setItem("phone", userPhone.value);
 }
+// linkedin
 function getUserLinkedin() {
   document.querySelector(".js-cardlinkedin").href = "" + userLinkedin.value;
   localStorage.setItem("linkedin", userLinkedin.value);
 }
-
+// github
 function getUserGithub() {
   document.querySelector(".js-cardgithub").href = "" + userGithub.value;
   localStorage.setItem("github", userGithub.value);
@@ -222,7 +210,7 @@ function getDataFromLocalStorage() {
   if (paletteValue !== null) {
     document.querySelector(`.js-palette${paletteValue} .js-palette${paletteValue}`).checked = true;
   }
-  // job...
+  // job
   const userJobValue = localStorage.getItem("job");
   if (userJobValue !== null) {
     userJob.value = userJobValue;
@@ -294,9 +282,6 @@ function ValidateEmail() {
 const validation = () => {
   let hasErrors = false;
   for (let input of elementInputs) {
-    // console.log(input);
-    // console.log(input.value === "");
-    // console.log(input.pattern !== "");
     if (input.value === "" && userPhone.value === "") {
       hasErrors = true;
       input.classList.remove("able");
@@ -308,9 +293,7 @@ const validation = () => {
 
 const sendInfo = () => {
   const sendPhoto = fr.result;
-  // console.log(sendPhoto);
   // const finalPalette = document.querySelector('input[name="palette"]:checked');
-  // console.log(finalPalette);
   let selectedPalette = document.querySelector(".js-radio:checked");
 
   selectedPalette = selectedPalette.value;
