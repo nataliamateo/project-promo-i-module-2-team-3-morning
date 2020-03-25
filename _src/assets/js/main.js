@@ -306,7 +306,7 @@ const sendInfo = () => {
     name: userName.value,
     job: userJob.value,
     email: userMail.value,
-    photo: 'sendPhoto',
+    photo: 'https://via.placeholder.com/150',
     phone: userPhone.value,
     linkedin: userLinkedin.value,
     github: userGithub.value

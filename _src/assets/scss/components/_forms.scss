@@ -24,7 +24,7 @@
   transform: rotate(180deg);
   padding-right: 144px;
   @media all and (min-width: 768px) {
-    padding-right: 178px;
+    padding-right: 172px;
   }
 }
 .collapsable--open .collapsible__header--arrow-icon--share {
@@ -33,14 +33,14 @@
   color: #54585a;
   transform: rotate(180deg);
   @media all and (min-width: 768px) {
-    padding-right: 178px;
+    padding-right: 172px;
   }
 }
 .collapsable--open2 .collapsible__content2--twitter {
   display: flex;
 }
 
-@import "components/_forms-design";
-@import "components/_forms-fill";
-@import "components/_forms-share";
-@import "components/shareTwitter";
+@import 'components/_forms-design';
+@import 'components/_forms-fill';
+@import 'components/_forms-share';
+@import 'components/shareTwitter';
