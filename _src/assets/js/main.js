@@ -121,8 +121,8 @@ function getUserJob() {
 }
 // mail
 function getUserMail() {
-  document.querySelector(".js-cardemail").href = "mailto:" + userMail.value;
-  localStorage.setItem("mail", userMail.value);
+  document.querySelector(".js-cardemail").href = "emailto:" + userMail.value;
+  localStorage.setItem("email", userMail.value);
 }
 // phone
 function getUserPhone() {
@@ -222,10 +222,10 @@ function getDataFromLocalStorage() {
     profilePreview.style.backgroundImage = userImageValue;
   }
   //email
-  const userMailValue = localStorage.getItem("mail");
+  const userMailValue = localStorage.getItem("email");
   if (userMailValue !== null) {
     userMail.value = userMailValue;
-    document.querySelector(".js-cardemail").href = "mailto:" + userMailValue;
+    document.querySelector(".js-cardemail").href = "emailto:" + userMailValue;
   }
   //Phone
   const userPhoneValue = localStorage.getItem("phone");
