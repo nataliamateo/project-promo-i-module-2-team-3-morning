@@ -225,21 +225,25 @@ function getDataFromLocalStorage() {
   const userMailValue = localStorage.getItem("mail");
   if (userMailValue !== null) {
     userMail.value = userMailValue;
+    document.querySelector(".js-cardemail").href = "mailto:" + userMailValue;
   }
   //Phone
   const userPhoneValue = localStorage.getItem("phone");
   if (userPhoneValue !== null) {
     userPhone.value = userPhoneValue;
+    document.querySelector(".js-cardphone").href = "tel:" + userPhoneValue;
   }
   //Linkedin
   const userLinkedinValue = localStorage.getItem("linkedin");
   if (userLinkedinValue !== null) {
     userLinkedin.value = userLinkedinValue;
+    document.querySelector(".js-cardlinkedin").href = userLinkedinValue;
   }
   //GitHub
   const userGithubValue = localStorage.getItem("github");
   if (userGithubValue !== null) {
     userGithub.value = userGithubValue;
+    document.querySelector(".js-cardgithub").href = userGithubValue;
   }
 }
 getDataFromLocalStorage();
